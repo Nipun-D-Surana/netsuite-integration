@@ -1,0 +1,25 @@
+<scheduledscript scriptid="customscript_upload_syrup_integration">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>HC_SC_UploadSyrupIntegrationCSV</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/SyrupIntegration/HC_SC_UploadSyrupIntegrationCSV.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_upload_syrup_integration">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>HC_SC_UploadSyrupIntegrationCSV</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT15M</repeat>
+          <startdate>2025-02-06</startdate>
+          <starttime>09:30:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>
